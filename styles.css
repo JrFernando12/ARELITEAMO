@@ -1,0 +1,52 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;  
+}
+body {
+  margin: 1rem;
+  border: .5rem solid red;
+}
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width; 90vw;
+  height: 100vh;
+  background-color: black;
+  border: .1rem solid white;
+  
+}
+.title {
+  display: flex;
+  align-self: center;
+  color: white;
+  font-family: Raleway;
+}
+.svg1 {
+  display: flex;
+  width: 10rem;
+  height: 10rem;
+  stroke: white;
+  fill: red;
+}
+.svg1:hover {
+  animation: pulse .5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
